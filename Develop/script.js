@@ -1,4 +1,4 @@
-//---------- The red button that links to the -addEventListener + HTML file-------
+//---------- The button that links to the -addEventListener + HTML file-------
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 

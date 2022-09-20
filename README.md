@@ -7,13 +7,30 @@ As we all know the web is full of hackers so this project was created to assist 
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+For this project all you have to do is press the button saying 'Generate Password'. 
+You will then be prompted: 
+"How long do you want your password to be?"
+This will allow you to choose a length between 8 characters up to 128. If the criteria is not met you will be alerted and will have the option to try again. 
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+You will then be prompted four more times asking whether you would like to include: 
+Uppercase Letters,
+Lowercase Letter,
+Numbers,
+And/Or Special Characters.
 
-    ```md
-    ![alt text](assets/images/PW-Length.jpg)
-    ```
+Please see the images down below as reference. Take note that the right hand side is the Console Log which also assists to show the pages actions. 
+
+```md
+![Prompt of length of password](Develop/assets/images/PW-Length.jpg)
+![Prompt of length of password](Develop/assets/images/PW-Length-Error.jpg)
+![Prompt of length of password](Develop/assets/images/PW-Prompts.jpg)
+```
+The end result the page will create you randomised password using selected characters. 
+```md
+![Prompt of length of password](Develop/assets/images/Generated-PW.jpg)
+```
+
+
 ## Features
 
 Console Log Features step by step comments to interact with page actions. 
@@ -22,8 +39,12 @@ Console Log Features step by step comments to interact with page actions.
 ## Credits
 
 ADL Uni Bootcamp
+
 2U Tutors
+
 Youtube.com
+
+mdn web docs
 
 
 ## License
