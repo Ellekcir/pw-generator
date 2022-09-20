@@ -3,8 +3,8 @@
 var generateBtn = document.querySelector("#generate");
 
 
-//-----------------------------------------------------------------
-// 1. Prompt the user for the password criteria
+//--------------------------------------------------------------------------------
+// 1. Prompt the user for the password criterias
 function generatePassword() {
   console.log("Button has been clicked")
  //return ("GENERATED PASSWORD WILL GO HERE")
@@ -16,7 +16,7 @@ var pwLength = parseInt(userInput)
 
 if (isNaN(pwLength)) {
   window.alert("That is an invalid number")
-  return
+  return ("Try again")
 }
 
 if (pwLength < 8 || pwLength > 128) {
@@ -43,35 +43,38 @@ var specialChar = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", "
 
 // 2.Validate the input 
 var arraysSelected = []
+var myArray = []
 
 if (confirmLower) {
-  arraysSelected.push(lowercase)
+  arraysSelected = arraysSelected.concat(lowercase)
 }
 
 if (confirmUpper) {
-  arraysSelected.push(uppercase)
+  arraysSelected = arraysSelected.concat(uppercase)
 }
 
 if (confirmNum) {
-  arraysSelected.push(numeric)
+  arraysSelected = arraysSelected.concat(numeric)
 }
 
 if (confirmSpec) {
-  arraysSelected.push(specialChar)
+  arraysSelected = arraysSelected.concat(specialChar)
 }
 
 console.log(arraysSelected)
 
-if (arraysSelected === 0 ) {
-  arraysSelected.push(lowercase)
+if (arraysSelected.length === 0 ) {
+  arraysSelected = arraysSelected.concat(lowercase)
   console.log("These are the defaulted lowercase characters when nothing is selected")
 }
 
-}
 // 3 Generate password based on criteria
+for ( i = 0; i < userInput; i++) {
+  myArray.push(arraysSelected[Math.floor(Math.random() * arraysSelected.length)]); 
+} console.log("This is the Users password: " + myArray.join("").toString())
+  return myArray.join("").toString();
 
-
-
+}
 
 //----------This is the writePassword function which will run the generatePassword func.--------------------
 // 4.Display password to page
