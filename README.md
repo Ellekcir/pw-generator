@@ -20,31 +20,33 @@ And/Or Special Characters.
 
 Please see the images down below as reference. Take note that the right hand side is the Console Log which also assists to show the pages actions. 
 
-```md
-![Prompt of length of password](Develop/assets/images/PW-Length.jpg)
-![Prompt of length of password](Develop/assets/images/PW-Length-Error.jpg)
-![Prompt of length of password](Develop/assets/images/PW-Prompts.jpg)
-```
-The end result the page will create you randomised password using selected characters. 
-```md
-![Prompt of length of password](Develop/assets/images/Generated-PW.jpg)
-```
 
+![Prompt of length of password](Develop/assets/images/PW-Length.jpg)
+![Alert Error](Develop/assets/images/PW-Length-Error.jpg)
+![Prompt selection of password](Develop/assets/images/PW-Prompts.jpg)
+
+The end result the page will create you randomised password using selected characters. 
+
+![Generated password](Develop/assets/images/Generated-PW.jpg)
+
+To get started making your own secured password,  go to my deployed webpage:
+
+https://ellekcir.github.io/pw-generator/
 
 ## Features
 
-Console Log Features step by step comments to interact with page actions. 
+Console Log Features step by step comments to interact with page actions. Interactive prompts and selections of variety of characters.
 
 
 ## Credits
 
-ADL Uni Bootcamp
+ADL Uni Bootcamp,
 
-2U Tutors
+2U Tutors,
 
-Youtube.com
+Youtube.com,
 
-mdn web docs
+mdn web docs.
 
 
 ## License
